@@ -1,1 +1,2 @@
-console.log("Hello Eagler Reborn!");
+import { displayToChat } from "./chat"
+displayToChat("Hello Eagler Reborn!")
