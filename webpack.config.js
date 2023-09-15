@@ -22,7 +22,12 @@ module.exports = {
       { 
         test: /\.tsx?$/,
         loader: "ts-loader"
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/inline'
       }
+        
     ]
   }
 };
