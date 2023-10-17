@@ -1,2 +1,2 @@
-import { displayToChat } from "./chat"
-displayToChat("Hello Eagler Reborn!")
+import { EaglerPL } from "./api"
+EaglerPL.displayToChat({msg: "Hello test"})
