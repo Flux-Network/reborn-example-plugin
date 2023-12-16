@@ -4,8 +4,8 @@ declare namespace PluginAPI {
         namespace listeners {
             let event: any[];
         }
-        function newEvent(name: any): void;
-        function callEvent(name: any, data: any): void;
+        function newEvent(name: string): void;
+        function callEvent(name: string, data: any): void;
     }
     namespace globals {
         function _initUpdate(): void;
@@ -19,6 +19,15 @@ declare namespace PluginAPI {
         function isImmuneToExplosions(): boolean;
         function isImmuneToFire(): boolean;
         function isInLava(): boolean;
+        function isInWater(): boolean;
+        function isInvisible(): boolean;
+        function isPushedByWater(): boolean;
+        function isRiding(): boolean;
+        function isSilent(): boolean;
+        function isSneaking(): boolean;
+        function isSprinting(): boolean;
+        function isWet(): boolean;
+        function getUUID(): string;
       
     }
     let version: any;
