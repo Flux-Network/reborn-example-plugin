@@ -20,9 +20,9 @@ declare namespace PluginAPI {
       
     }
     let version: any;
-    function addEventListener(name: any, callback: any): void;
-    function removeEventListener(name: any, func: any, slow: any): void;
-    function updateComponent(component: any): void;
-    function require(component: any): void;
+    function addEventListener(name: string, callback: any): void;
+    function removeEventListener(name: string, func: any, slow: any): void;
+    function updateComponent(component: string): void;
+    function require(component: string): void;
     
 }
