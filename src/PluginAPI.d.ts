@@ -84,6 +84,19 @@ declare namespace PluginAPI {
             let mainInventory: any[];
             let armorInventory: any[];
         }
+        namespace capabilities {
+            let disableDamage: boolean;
+            let isFlying: boolean;
+            let allowFlying: boolean;
+            let isCreativeMode: boolean;
+            let allowEdit: boolean;
+            let flySpeed: number;
+            let walkSpeed: number;
+            function getFlySpeed(): number;
+            function getWalkSpeed(): number;
+            function setFlySpeed(json: any): void;
+            function setPlayerWalkSpeed(json: any): void;
+        }
         let cameraYaw: number;
         let chasingPosX: number;
         let chasingPosY: number;
