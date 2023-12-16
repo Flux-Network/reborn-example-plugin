@@ -101,5 +101,6 @@ declare namespace PluginAPI {
     function update(): void;
     function clickMouse(): void;
     function rightClickMouse(): void;
+    function displayToChat(json: any): void;
     
 }
