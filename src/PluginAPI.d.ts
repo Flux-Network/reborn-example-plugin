@@ -78,6 +78,19 @@ declare namespace PluginAPI {
         let isJumping: boolean;
         function jump(): void;
         function kill(): void;
+        namespace inventory {
+            let currentItem: number;
+            let inventoryChanged: boolean;
+            let mainInventory: any[];
+            let armorInventory: any[];
+        }
+        let cameraYaw: number;
+        let chasingPosX: number;
+        let chasingPosY: number;
+        let chasingPosZ: number;
+        let experience: number;
+        let experienceLevel: number;
+        let experienceTotal: number;
     }
     let version: string;
     let clientBrand: string;
