@@ -27,7 +27,13 @@ declare namespace PluginAPI {
         function isSneaking(): boolean;
         function isSprinting(): boolean;
         function isWet(): boolean;
+        function setBeenAttacked(): void;
+        function setDead(): void;
+        function setInWeb(): void;
+        function setOnFireFromLava(): void;
         function getUUID(): string;
+        function getAir(): integer
+        
       
     }
     let version: any;
