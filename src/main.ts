@@ -1,2 +1,2 @@
-import { EaglerPL } from "./api"
-EaglerPL.displayToChat({msg: "Hello test"})
+// @ts-ignore
+PluginAPI.displayToChat({msg: "Hello test"})
