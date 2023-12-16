@@ -32,14 +32,30 @@ declare namespace PluginAPI {
         function setInWeb(): void;
         function setOnFireFromLava(): void;
         function getUUID(): string;
-        function getAir(): integer
-        
-      
+        function getAir(): integer;
+        function getAlwaysRenderNameTag(): boolean;
+        function getAlwaysRenderNameTagForRender(): boolean;
+        function getBrightness(json: any): integer;
+        function getBrightnessForRender(json: any): integer;
+        function reload(): void;
+        function getCollisionBorderSize(): integer;
+        let x: integer;
+        let y: integer;
+        let z: integer;
+        let motionX: integer;
+        let motionY: integer;
+        let motionZ: integer;
+        let isInWeb: boolean;
+        let onGround: boolean;
     }
-    let version: any;
+    let version: string;
+    let clientBrand: string;
     function addEventListener(name: string, callback: any): void;
     function removeEventListener(name: string, func: any, slow: any): void;
     function updateComponent(component: string): void;
     function require(component: string): void;
+    function update(): void;
+    function clickMouse(): void;
+    function rightClickMouse(): void;
     
 }
