@@ -69,6 +69,15 @@ declare namespace PluginAPI {
         let isImmuneToFire: boolean;
         let isOutsideBorder: boolean;
         let entityCollisionReduction: number;
+        let isSwingInProgress: boolean;
+        let arrowHitTimer: number;
+        let hurtTime: number;
+        let maxHurtTime: number;
+        let swingProgressInt: number;
+        let dead: boolean;
+        let isJumping: boolean;
+        function jump(): void;
+        function kill(): void;
     }
     let version: string;
     let clientBrand: string;
