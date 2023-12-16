@@ -16,7 +16,9 @@ declare namespace PluginAPI {
         function isEating(): boolean;
         function isEntityAlive(): boolean;
         function isEntityInsideOpaqueBlock(): boolean;
-        function isEating(): boolean;
+        function isImmuneToExplosions(): boolean;
+        function isImmuneToFire(): boolean;
+        function isInLava(): boolean;
       
     }
     let version: any;
