@@ -115,5 +115,6 @@ declare namespace PluginAPI {
     function clickMouse(): void;
     function rightClickMouse(): void;
     function displayToChat(json: any): void;
+    function uwuify(iforgorifthisisjson: any): string;
     
 }
